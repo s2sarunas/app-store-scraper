@@ -1,7 +1,7 @@
 # app-store-scraper [![Build Status](https://secure.travis-ci.org/s2sarunas/app-store-scrapper.png)](http://travis-ci.org/s2sarunas/app-store-scrapper)
 Node.js module to scrape application data from the iTunes/Mac App Store.
 The goal is to provide an interface as close as possible to the
-[google-play-scraper](https://github.com/facundoolano/google-play-scraper) module.
+[google-play-scraper](https://github.com/s2sarunas/google-play-scrapper) module.
 
 ## Installation
 ```
@@ -351,6 +351,7 @@ Returns:
     score: 1,
     title: 'Help! THE PROBLEM IS NOT FIXED!',
     text: 'STILL HAVING THE SAME ISSUE.  It\'s happening again...',
+    updated: '2020-05-17T21:17:56-07:00'
     url: 'https://itunes.apple.com/us/review?id=553834731&type=Purple%20Software' },
   (...)
 ]
