@@ -1,5 +1,5 @@
 {
-  "name": "app-store-scraper",
+  "name": "app-store-scrapper",
   "version": "0.16.2",
   "description": "scrape data from the itunes app store",
   "main": "index.js",
