@@ -5,7 +5,7 @@ The goal is to provide an interface as close as possible to the
 
 ## Installation
 ```
-npm install app-store-scraper
+npm install s2sarunas/app-store-scrapper
 ```
 
 ## Usage
