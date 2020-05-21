@@ -1,11 +1,11 @@
-# app-store-scrapper [![Build Status](https://secure.travis-ci.org/s2sarunas/app-store-scrapper.png)](http://travis-ci.org/s2sarunas/app-store-scrapper)
+# app-store-scraper [![Build Status](https://secure.travis-ci.org/s2sarunas/app-store-scraper.png)](http://travis-ci.org/s2sarunas/app-store-scraper)
 Node.js module to scrape application data from the iTunes/Mac App Store.
 The goal is to provide an interface as close as possible to the
 [google-play-scrapper](https://github.com/s2sarunas/google-play-scrapper) module.
 
 ## Installation
 ```
-npm install s2sarunas/app-store-scrapper
+npm install s2sarunas/app-store-scraper
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ Retrieves the full detail of an application. Options:
 Example:
 
 ```javascript
-var store = require('app-store-scrapper');
+var store = require('app-store-scraper');
 
 store.app({id: 553834731}).then(console.log).catch(console.log);
 ```
@@ -78,7 +78,7 @@ Results:
 Example with `ratings` option:
 
 ```javascript
-var store = require('app-store-scrapper');
+var store = require('app-store-scraper');
 
 store.app({id: 553834731, ratings: true}).then(console.log).catch(console.log);
 ```
@@ -115,7 +115,7 @@ Retrieves a page of reviews for the app. Options:
 Example:
 
 ```js
-var store = require('app-store-scrapper');
+var store = require('app-store-scraper');
 
 store.reviews({
   appId: 'com.midasplayer.apps.candycrushsaga',
@@ -161,7 +161,7 @@ Retrieves the ratings for the app. Options:
 Example:
 
 ```js
-var store = require('app-store-scrapper');
+var store = require('app-store-scraper');
 
 store.ratings({
   appId: 'com.midasplayer.apps.candycrushsaga',
@@ -193,9 +193,9 @@ to avoid requesting the same data twice. The `memoized` function returns the
 store object that caches its results:
 
 ``` javascript
-var store = require('app-store-scrapper'); // regular non caching version
-var memoized = require('app-store-scrapper').memoized(); // cache with default options
-var memoizedCustom = require('app-store-scrapper').memoized({ maxAge: 1000 * 60 }); // cache with default options
+var store = require('app-store-scraper'); // regular non caching version
+var memoized = require('app-store-scraper').memoized(); // cache with default options
+var memoizedCustom = require('app-store-scraper').memoized({ maxAge: 1000 * 60 }); // cache with default options
 
 memoized.app({id: 553834731}) // will make a request
   .then(() => memoized.app({id: 553834731})); // will resolve to the cached value without requesting
