@@ -1,7 +1,7 @@
 # app-store-scraper [![Build Status](https://secure.travis-ci.org/s2sarunas/app-store-scraper.png)](http://travis-ci.org/s2sarunas/app-store-scraper)
 Node.js module to scrape application data from the iTunes/Mac App Store.
 The goal is to provide an interface as close as possible to the
-[google-play-scrapper](https://github.com/s2sarunas/google-play-scrapper) module.
+[play-store-scraper](https://github.com/s2sarunas/play-store-scraper) module.
 
 ## Installation
 ```
